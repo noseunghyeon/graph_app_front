@@ -35,7 +35,7 @@ const VolumeServices = () => {
   };
 
   return (
-    <div className="block-wrap ml-[14px] my-[14px]">
+    <div className="block-wrap lg:ml-[14px] sm:w-[calc(50%-7px)] lg:w-auto sm:ml-[14px] w-full sm:mt-0 mt-[14px]">
       <HeadTitle title="Volume vs Services Level" />
       <div className="stacked-bar-char w-full h-[250px] mb-5">
         <ResponsiveContainer width="100%" height="100%">
