@@ -70,12 +70,12 @@ export const fetchvolumeServices = createFetchThunk(
   GET_VOLUME_SERVICES_API_URL // 요청 url
 );
 
-// handleFulfilled 함수 정의 : 요청성공시 상태 업데이트 로직을 별도의 함수로 분리
+// handleFulfilled 함수 정의 : 요청 성공시 상태 업데이트 로직을 별도의 함수로 분리
 const handleFulfilled = (stateKey) => (state, action) => {
   state[stateKey] = action.payload; // action.payload에 응답 데이터가 들어있음
 };
 
-// handleRejected 함수 정의 : 요청성공시 상태 업데이트 로직을 별도의 함수로 분리
+// handleRejected 함수 정의 : 요청 성공시 상태 업데이트 로직을 별도의 함수로 분리
 const handleRejected = (state, action) => {
   console.log("Error", action.payload);
   state.isError = true;
